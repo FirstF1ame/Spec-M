@@ -1,3 +1,11 @@
+# --- 서버 강제 설치 치트키 ---
+import os, sys, subprocess
+try:
+    import supabase
+except ImportError:
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "supabase", "pandas", "numpy", "altair"])
+# -----------------------------
+
 import streamlit as st
 import pandas as pd
 import numpy as np
