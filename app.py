@@ -1,12 +1,3 @@
-# --- 서버 권한 우회 강제 설치 치트키 V2 ---
-import sys
-import subprocess
-try:
-    import supabase
-except ImportError:
-    # --user 옵션: 시스템 폴더가 아닌 개인 폴더에 설치하여 '권한 없음' 에러를 박살냅니다.
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "supabase", "--user"])
-# ------------------------------------------
 
 import streamlit as st
 import pandas as pd
